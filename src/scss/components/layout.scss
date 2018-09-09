@@ -1,0 +1,31 @@
+.textboxes__container, .info__column {
+  float: left;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.textboxes__container {
+  width: calc(100% - 240px);
+  padding: 24px;
+  background-color: #eeeeee;
+
+}
+
+.info__column {
+  width: 240px;
+  padding: 24px 12px;
+  background-color: #e6e6e6;
+}
+
+.info__column__item {
+  & + & {
+    margin-top: 12px;
+  }
+}
+
+.info__column__stats__item {
+  font-size: 18px;
+  & + & {
+    margin-top: 6px;
+  }
+}
